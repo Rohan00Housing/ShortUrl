@@ -25,7 +25,7 @@ module UrlHelper
   def getShortUrlFromLong(long_)
 
     alreadyShortUrl = Url.find_by_long_url(long_)
-
+    a = 1
     if alreadyShortUrl != nil
       return alreadyShortUrl.short_url
     end
